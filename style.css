@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+
+}
+* + * {
+    margin-top: 1rem;
+}
+
+html{
+    font: 100%/1.25 'Bangers', cursive;
+
+}
+
+body{
+    padding-left: 1.8rem;
+    background-color: rgba(235, 233, 233, 0.133);
+    color:green;
+
+}
+
+h1{
+    font-size: 1.5rem;
+    
+}
+
+.demo-form fieldset{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-style: none;
+
+}
+
+.demo-form legend,
+.demo-form label.question{
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.demo-form label{
+    display: block;
+    margin-top: .7rem;
+}
+
+.demo-form input, label.question{
+    margin-top: 1rem;
+}
+
+.demo-form input,.demo-form select{
+    display: block;
+    width: 15.5rem;
+    margin-top: .35rem;
+}
+
+.demo-form input[type="radio"],
+.demo-form input[type="radio"]+label{
+    display: inline-block;
+    width:auto;
+    margin-top: .35rem;
+}
+
+.demo-form input{
+    padding: 3px 5px;
+}
+
+.demo-form input::placeholder{
+    color:purple
+}
+
+.demo-form input:invalid{
+    border:2px solid red;
+}
+.demo-form button{
+	display:  inline-block;
+	width: 150px;
+	padding: 10px;
+	border: 2px solid #fff;
+	margin-top: 1.5rem;
+	cursor: pointer;
+	background-color: #000;
+	color: inherit;
+	font: inherit;
+	transition-property: color, background;
+	transition-duration: 0.35s;
+	transition-timing-function: ease-in-out;
+}
+
+.demo-form button:hover,
+.demo-form button:active,
+.demo-form button:focus{
+	color: #000;
+	background: #fff;
+}

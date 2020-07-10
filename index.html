@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <form class="demo-form" action="mailto:sau688@gmail.com" method="post">
+        
+        <h1>Tell Us about Yourself!</h1>
+        <fieldset name="contact info">
+            <legend>Contact info
+            </legend>
+            <label for="first name"required>First Name</label>
+            <input placeholder="Billy" type="text" name="firstname" id="first-name" required/>
+            <label for="last name" required>Last name</label>
+            <input placeholder="BobJoe" type="text" name="firstname" id="last-name" required/>
+            <label for="phone" required>Phone number</label>
+            <input type="tel" pattern="^[1-9]\d{2}-\d{3}-\d{4}" name="phone" id="phone" placeholder="555-555-5555" title="A Typical US Phone Number" required/>
+        </fieldset>
+    
+
+        <label class="question" for="feelings">How Do You Feel?</label>
+        <select name="feelings" id="feeling" required>
+            <option value="0" selected>Great</option>
+            <option value="1">Cool </option>
+            <option value="2">Meh</option>
+        </select>
+
+        <fieldset>
+        <legend class="question">How do you really feel?</legend>
+            <input type="radio" name="feelings-2" id="ans-great-1" value="0">
+                <label for="ans-great-1">Feeling good, feeling great</label>
+                <br>
+            <input type="radio" name="feelings-2" id="ans-great-2">
+                <label for="ans-great-2">GRRRREEEEAAAATTTTTT!</label>
+                <br>
+            <input type="radio" name="feelings-2" id="ans-great-3">
+                <label for="ans-great-3">I'm feeling goooooood</label>
+    </fieldset>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+        
+    </body>
+</html>
